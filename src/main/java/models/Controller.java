@@ -23,7 +23,7 @@ public class Controller {
             HashMap<String, Object> model = new HashMap<>();
             model.put("name", result);
             model.put("template", "one.vtl");
-            return new ModelAndView(model, "layout.vtl");
+            return new ModelAndView(model, "public/layout.vtl");
         }, velocityTemplateEngine);
 
 
@@ -33,7 +33,7 @@ public class Controller {
             HashMap<String, Object> model = new HashMap<>();
             model.put("pair", results);
             model.put("template", "two.vtl");
-            return new ModelAndView(model, "layout.vtl");
+            return new ModelAndView(model, "public/layout.vtl");
         }, velocityTemplateEngine);
     }
 }

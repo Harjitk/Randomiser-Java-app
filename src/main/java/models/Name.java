@@ -46,8 +46,10 @@ public class Name {
         ArrayList<String> pairs = new ArrayList();
         Collections.shuffle(names);
         pairs.add(names.get(0));
-        names.remove(0);
-        return names;
+        pairs.add(names.get(1));
+//        names.remove(0);
+//        return names;
+        return pairs;
 
     }
 
